@@ -1,0 +1,13 @@
+all: mul_thr_1 hello_world_threaded mul_thr_2 mul_thr_2
+
+mul_thr_1: mul_thr_1.c
+	gcc -o mul_thr_1 mul_thr_1.c -pthread
+	
+mul_thr_2: mul_thr_2.c
+	gcc -o mul_thr_2 mul_thr_2.c -pthread	
+
+mul_thr_3: mul_thr_3.c
+	gcc -o mul_thr_3 mul_thr_3.c -pthread	
+	
+hello_world_threaded: hello_world_threaded.c
+	gcc -o hello_world_threaded hello_world_threaded.c -pthread
